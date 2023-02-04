@@ -1,5 +1,5 @@
 {
-    "model_path": "hf:tensorrt/anything-v3",
+    "model_path": "hf:burnerbaby/blah-tensorrt",
     "extras": {
         "en_vae": {
             "type": "hf",

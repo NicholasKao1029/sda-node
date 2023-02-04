@@ -58,7 +58,7 @@ def image_generator(
         if model_name == 'en_vae':
             continue
         model_path = get_model_path(model_name, index, config)
-        indiv_engine = Engine(model_path)
+        indiv_engine = Engine(model_name, model_path)
         indiv_engine.activate() #<----
         engine[model_name] = indiv_engine
 
