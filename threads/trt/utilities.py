@@ -49,9 +49,11 @@ def get_model_path(model_name, index_file, config):
 class Engine():
     def __init__(
         self,
+        name,
         engine_dir,
     ):
         self.engine_path = engine_dir
+        self.engine_name = name
         self.engine = None
         self.context = None
         self.buffers = OrderedDict()
@@ -82,7 +84,7 @@ class Engine():
 
         engine = engine_from_network(network_from_onnx_path(onnx_path), config=CreateConfig(fp16=fp16, profiles=[p],
             preview_features=preview_features))
-        save_engine(engine, path=self.engine_path)
+        save_engine(engine, path=os.path.join(self.engine_path, f"{self.engine_name}.plan"))
 
     def activate(self):
         print(f"Loading TensorRT engine: {self.engine_path}")
