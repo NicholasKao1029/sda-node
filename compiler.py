@@ -260,11 +260,11 @@ tags:
 
 # {MODEL_NAME} converted into TensorRT
 
-<a href="https://github.com/chavinlo/sda-node/"><img src="https://i.imgur.com/fQS926g.png"></a>
+<img src="https://i.imgur.com/fQS926g.png"></a>
 
 Model converted from diffusers into TensorRT for accelerated inference up to 4x faster.
 
-For how to use the model check https://github.com/chavinlo/sda-node
+originally from: https://github.com/chavinlo/sda-node
 
 This model was automatically converted by SDA-node
 
