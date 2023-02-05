@@ -18,3 +18,5 @@ pytest
 onnx-graphsurgeon
 gunicorn
 flask
+diffusers==0.12.1
+numpy==1.23.1
