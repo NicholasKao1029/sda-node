@@ -1,3 +1,4 @@
+#!/bin/bash
 # install python3.10 and create a venv
 sudo apt update && sudo apt upgrade -y
 sudo apt install software-properties-common -y
