@@ -275,6 +275,7 @@ def get_weighted_text_embeddings(
         prompt_tokens = [
             token[1:-1] for token in pipe.tokenizer(prompt, max_length=max_length, truncation=True).input_ids
         ]
+        # NOTE: Why len() here?
         prompt_weights = [[1.0] * len(token) for token in prompt_tokens]
         if uncond_prompt is not None:
             if isinstance(uncond_prompt, str):
@@ -283,6 +284,7 @@ def get_weighted_text_embeddings(
                 token[1:-1]
                 for token in pipe.tokenizer(uncond_prompt, max_length=max_length, truncation=True).input_ids
             ]
+            # NOTE: Why len() here?
             uncond_weights = [[1.0] * len(token) for token in uncond_tokens]
 
     # round up the longest length of tokens to a multiple of (model_max_length - 2)

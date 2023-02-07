@@ -2,7 +2,7 @@
 
 -------
 
-<a href="https://github.com/chavinlo/sda-node/"><img src="https://i.imgur.com/fQS926g.png"></a>
+<img src="https://i.imgur.com/fQS926g.png"></a>
 ## Stable Diffusion Accelerated
 ## 60 steps per second!
 ### [Special thanks to Redmond AI for providing compute for testing](http://www.redmond.ai/)
@@ -173,8 +173,19 @@ Upon failure:
 }
 ```
 
-# Support
-Open an Issue or join SAIL discord: https://discord.gg/8Sh2T6gjd2
+# Compilation 
+
+This example
+- set up the compiler env via `compiler-setup.sh` 
+- `$HF_TOKEN` is set get from [huggingface](https://huggingface.co/settings/tokens)
+- `$PLUGIN_LIBS` is set
+
+```
+ LD_PRELOAD=${PLUGIN_LIBS} python compiler.py -m nuigurumi/basil_mix --build-dynamic-shape --hf-token $HF_TOKEN
+```
+
+Compilation takes ~20 min A100 80gb
+
 
 # Benchmark
 An extensive list of benchmarks is available at [docs/benchmarks.md](docs/benchmarks.md)
