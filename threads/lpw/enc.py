@@ -195,7 +195,7 @@ def get_unweighted_text_embeddings(
     When the length of tokens is a multiple of the capacity of the text encoder,
     it should be split into chunks and sent to the text encoder individually.
     """
-    max_embeddings_multiples = (text_input.shape[1] - 2) // (chunk_length - 2)
+    max_embeddings_multiples = (text_input.shape[1] - 2) // (chunk_length - 2) # wtf why so complicated
     if max_embeddings_multiples > 1:
         text_embeddings = []
         for i in range(max_embeddings_multiples):
@@ -287,6 +287,7 @@ def get_weighted_text_embeddings(
             # NOTE: Why len() here?
             uncond_weights = [[1.0] * len(token) for token in uncond_tokens]
 
+    
     # round up the longest length of tokens to a multiple of (model_max_length - 2)
     max_length = max([len(token) for token in prompt_tokens])
     if uncond_prompt is not None:
