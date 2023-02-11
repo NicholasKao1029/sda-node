@@ -5,7 +5,7 @@
 
 python3.10 -m venv venv && 
 source venv/bin/activate && 
-pip install -r tensorrt-requirements &&
+pip install -r tensorrt-requirements.txt &&
 pip install -r requirements.txt && 
 pip install --upgrade pip && 
 pip install --upgrade tensorrt && 
