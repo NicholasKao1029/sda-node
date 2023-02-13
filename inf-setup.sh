@@ -2,7 +2,7 @@
 
 # assumes python3.10 is installed
 # 3.10.8 works
-# 3.10.5 TBD
+# 3.10.5 works
 # assumes env var TRT_OSSPATH is set to the path of the TensorRT OSS repo
 
 python -m venv venv && 
@@ -17,3 +17,6 @@ pip install transformers
 pip install cuda-python
 pip install scipy
 pip install gunicorn
+# why are these doubled up? IDK 
+pip install diffusers
+pip install tensorrt
