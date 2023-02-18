@@ -5,7 +5,7 @@
 # 3.10.5 works
 # assumes env var TRT_OSSPATH is set to the path of the TensorRT OSS repo
 
-python -m venv venv && 
+python3.10 -m venv venv && 
 source venv/bin/activate && 
 pip install -r tensorrt-requirements.txt &&
 pip install -r requirements.txt && 
