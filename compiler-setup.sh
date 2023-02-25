@@ -9,3 +9,6 @@ pip install nvidia-pyindex
 pip install polygraphy
 pip install transformers
 pip install scipy
+pip install torch --upgrade
+pip install torchvision --upgrade
+pip install onnx --upgrade

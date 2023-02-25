@@ -206,7 +206,7 @@ Generated with Anything-V3
 Sent Request:
 {
 	"prompt": "(Masterpiece:1.2), best quality, illustration, (delicate details:1.5),extremely detailed CG, lovely layered white hair, absurdly long hair, (glowing blue eyes), lip gloss, makeup, (school:1.5), evil smile, medium breasts, school girl, ((arms behind back)), school uniform",
-	"negprompt": "nsfw, (worst quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), 3D face, nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title",
+	"negprompt": "nsfw, (worsT quality, low quality:1.3), (depth of field, blurry:1.2), (greyscale, monochrome:1.1), 3D face, nose, cropped, lowres, text, jpeg artifacts, signature, watermark, username, blurry, artist name, trademark, watermark, title",
 	"width": 512,
 	"height": 512,
 	"steps": 25,
