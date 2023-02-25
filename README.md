@@ -181,7 +181,7 @@ This example
 - `$PLUGIN_LIBS` is set
 
 
-cd TensorRT && export TRT_OSSPATH=$PWD && cd ../sda-node && export HF_TOKEN=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 && export PLUGIN_LIBS="$TRT_OSSPATH/build/out/libnvinfer_plugin.so"
+cd TensorRT && export TRT_OSSPATH=$PWD && cd ../sda-node && export HF_TOKEN=_ && export PLUGIN_LIBS="$TRT_OSSPATH/build/out/libnvinfer_plugin.so"
 
 
 ```
