@@ -180,6 +180,10 @@ This example
 - `$HF_TOKEN` is set get from [huggingface](https://huggingface.co/settings/tokens)
 - `$PLUGIN_LIBS` is set
 
+
+cd TensorRT && export TRT_OSSPATH=$PWD && cd ../sda-node && export HF_TOKEN=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 && export PLUGIN_LIBS="$TRT_OSSPATH/build/out/libnvinfer_plugin.so"
+
+
 ```
  LD_PRELOAD=${PLUGIN_LIBS} python compiler.py -m nuigurumi/basil_mix --build-dynamic-shape --hf-token $HF_TOKEN
 ```
