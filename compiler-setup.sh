@@ -12,3 +12,4 @@ pip install scipy
 pip install torch --upgrade
 pip install torchvision --upgrade
 pip install onnx --upgrade
+pip install pycuda
