@@ -1,6 +1,6 @@
 python3.10 -m venv compiler-venv  
 source compiler-venv/bin/activate
-pip install -r requirements.txt 
+# pip install -r requirements.txt 
 pip install -r tensorrt-requirements.txt 
 pip install --upgrade pip  
 pip install --upgrade tensorrt  
@@ -9,7 +9,7 @@ pip install nvidia-pyindex
 pip install polygraphy
 pip install transformers
 pip install scipy
-pip install torch --upgrade
-pip install torchvision --upgrade
-pip install onnx --upgrade
-pip install pycuda
+# pip install torch --upgrade
+# pip install torchvision --upgrade
+# pip install onnx --upgrade
+pip install cuda-python
